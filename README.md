@@ -2,7 +2,7 @@
 
 ## Instalación
 
-- Descarga el SDK desde desde [la página de releases]. Para comenzar el desarrollo puedes usar la versión para ambiente de Test.
+- Descarga el SDK desde desde [la página de releases](https://github.com/TransbankDevelopers/transbank-sdk-android-onepay/releases). Para comenzar el desarrollo puedes usar la versión para ambiente de Test (y luego deberás compilar contra la versión de Producción para tu app productiva)
 - Agrega el archivo `.aar` [creándolo como un módulo en tu proyecto Android](https://medium.com/@notestomyself/how-to-include-external-aar-file-using-gradle-6604b378e808).
 
 ## Modo de uso  
