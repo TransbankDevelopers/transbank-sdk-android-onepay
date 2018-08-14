@@ -3,7 +3,17 @@
 ## Instalación
 
 - Descarga el SDK desde desde [la página de releases](https://github.com/TransbankDevelopers/transbank-sdk-android-onepay/releases). Para comenzar el desarrollo puedes usar la versión para ambiente de Test (y luego deberás compilar contra la versión de Producción para tu app productiva)
-- Agrega el archivo `.aar` [creándolo como un módulo en tu proyecto Android](https://medium.com/@notestomyself/how-to-include-external-aar-file-using-gradle-6604b378e808).
+- Agrega el archivo `.aar` creándolo como un módulo en tu proyecto Android. Para esto sigue los siguientes pasos: 
+  - En Android Studio ve a `File -> New -> New Module -> Import .jar/.aar` e importa el archivo `.aar` que descargaste.
+  - Luego en el `build.gradle` de tu proyecto (el que pertenece al módulo "app") agrega lo siguiente dentro de la sección `dependencies`: 
+
+    ```
+    compile project(':one_pay_sdk_tbkqa')
+    ```
+
+    El nombre del proyecto depende del nombre del archivo que hayas importado (o el nombre que le hayas puesto manualmente al subproyecto al importarlo. No olvides los dos puntos antes del nombre del proyecto.
+
+- Luego haz un Clean Build y estás listo para usar el SDK. Ya podrás importar las clases bajo `cl.ionix.tbk_ewallet_sdk_android`
 
 ## Modo de uso  
 
