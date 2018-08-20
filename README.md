@@ -27,7 +27,7 @@ import cl.ionix.tbk_ewallet_sdk_android.OnePay;
 import cl.ionix.tbk_ewallet_sdk_android.callback.OnePayCallback;
 //...
 
-Onepay onepay = new OnePay(this);
+OnePay onepay = new OnePay(this);
 if (onepay.isOnePayInstalled()) {
   // Todo OK, sigue adelante
 } else {
@@ -47,7 +47,7 @@ import cl.ionix.tbk_ewallet_sdk_android.OnePay;
 import cl.ionix.tbk_ewallet_sdk_android.callback.OnePayCallback;
 //...
 
-Onepay onepay = new OnePay(this);
+OnePay onepay = new OnePay(this);
 onepay.initPayment("occ", new OnePayCallback() {
     @Override
     public void failure(Error error, String s) {
