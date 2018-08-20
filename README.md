@@ -52,11 +52,11 @@ onepay.initPayment("occ", new OnePayCallback() {
     @Override
     public void failure(Error error, String s) {
         switch (error) {
-            case Error.INVALID_OCC:
+            case INVALID_OCC:
                 // Algo anda mal con el occ que obtuviste desde el backend
                 // Debes reintentar obtener el occ o abortar
                 break;
-            case Error.ONE_PAY_NOT_INSTALLED:
+            case ONE_PAY_NOT_INSTALLED:
                 // Onepay no está instalado.
                 // Debes abortar o pedir al usuario instalar Onepay (y luego reintentar initPayment)
                 break;
