@@ -70,7 +70,7 @@ onepay.initPayment("occ", new OnePayCallback() {
 
 Si todo funciona OK, el control pasará a la app Onepay donde el usuario podrá autorizar la transacción.
 
-### Recibir el callback después que el usuario
+### Recibir el callback después que el usuario autoriza el pago
 
 Una vez se complete el pago, Onepay redigirá el control de regreso a tu app mediante el `appSchema` indicado en el backend al crear la transacción. Tu debes registrar un `Activity` que responda a la URL registrada en dicho `appSchema`. Para eso debes configurar un intent filter a tu activity. Por ejemplo, si tu `appSchema` fuera `mi-app://mi-app/onepay-result`:
 
