@@ -8,7 +8,7 @@
   - Luego en el `build.gradle` de tu proyecto (el que pertenece al módulo "app") agrega lo siguiente dentro de la sección `dependencies`: 
 
     ```
-    compile project(':one_pay_sdk_tbkqa')
+    implementation project(':one_pay_sdk_tbkqa')
     ```
 
     El nombre del proyecto depende del nombre del archivo que hayas importado (o el nombre que le hayas puesto manualmente al subproyecto al importarlo. No olvides los dos puntos antes del nombre del proyecto.
