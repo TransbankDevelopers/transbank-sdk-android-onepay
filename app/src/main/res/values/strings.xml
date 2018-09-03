@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">tbk_ewallet_sdk_android</string>
+
+    <string name="one_pay_not_installed">Applicación OnePay no instalada</string>
+    <string name="one_pay_invalid_occ">Occ inválida</string>
+    <string name="one_pay_connection_error">Error de conexión</string>
+</resources>
