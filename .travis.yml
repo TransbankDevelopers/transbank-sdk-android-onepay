@@ -1,6 +1,14 @@
 language: android
 script: echo "We don't have tests yet :("
 
+android:
+  components:
+    - build-tools-26.0.2
+    - android-26
+
+before_install:
+  - yes | sdkmanager "platforms;android-26"
+
 before_deploy:
   - sh package.sh
 
