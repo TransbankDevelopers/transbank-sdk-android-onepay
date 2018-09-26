@@ -3,7 +3,7 @@
 ## Instalación
 
 - Descarga el SDK desde desde [la página de releases](https://github.com/TransbankDevelopers/transbank-sdk-android-onepay/releases). El SDK sirve tanto para desarrollo como para producción.
-- Agrega el archivo `.aar` creándolo como un módulo en tu proyecto Android. Para esto sigue los siguientes pasos: 
+- Descomprime el release y agrega el archivo `.aar` creándolo como un módulo en tu proyecto Android. Para esto sigue los siguientes pasos: 
   - En Android Studio ve a `File -> New -> New Module -> Import .jar/.aar` e importa el archivo `.aar` que descargaste.
   - Luego en el `build.gradle` de tu proyecto (el que pertenece al módulo "app") agrega lo siguiente dentro de la sección `dependencies`: 
 
