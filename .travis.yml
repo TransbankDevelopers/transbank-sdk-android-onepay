@@ -1,0 +1,24 @@
+language: android
+script: echo "We don't have tests yet :("
+
+android:
+  components:
+    - build-tools-26.0.2
+    - android-26
+
+before_install:
+  - yes | sdkmanager "platforms;android-26"
+
+before_deploy:
+  - sh package.sh
+
+deploy:
+  provider: releases
+  name: "$TRAVIS_TAG"
+  api_key:
+    secure: 1YdLS0MvW6dH9ARCcdjRDnES7++8cXeyb50yYoRzWvHFubM+RRkIIc5iCjt9jw2uLOF4tMuVDk1Exj3Ibogfy+L/SLgXfNxgj35z58doo2nY2l5nGZShumIKNmfnLcGxjQe6gZGqp8owov/qZg79h4ue2Vh0TgRI2txYjcdpM1mSC2RDwMASsJ4wyH1P9JB/+ShaStaTxLvOu2a7nslI0E1DEJQuqKrjbRtp+yxtBIGoYwwA4Z6JmnEr1BBeiV7sAhrRvmM0N1cen4+sfAFWFzwJLiq/XKjjjBnd23zv0izkKwdhS6w26ErejzmFlLMWeeQy/ODPWRJsJtJ4Y/8br0crrIT97vahNe0tYJfqLwSiB9jJcb08+OajWcohC6araPFNxqGyx5QcJEyxEb0KNtU0VjsEOpLCpHtpfenRUlH0OTuJWw1/2J6lt9/NcT/qjTro6+ZKFPVIvwB8Iy0kldKfmKa/vx208SO6CYVi1ubkHsIZe7YVQVkfVMaVjbeLpqkFB8tBoyoefnUsGkfaJs3meovPi7xZyWj96z0Sy8jNvs4E6sj44hNzr4oGyFqNhA8FrHI260QNP+qdmcNkir1IpgF6e0Fu+yh3fmOphQENWN09JqjKfmnkUT83EOUfoTAiuUyWe5Gt2XOBy53EuhEVbzcvrPSAUW6vGU76tDk=
+  file: "sdk-android-onepay-$TRAVIS_TAG.zip"
+  skip_cleanup: true
+  on:
+    repo: TransbankDevelopers/transbank-sdk-android-onepay
+    tags: true
