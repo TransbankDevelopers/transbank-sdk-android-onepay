@@ -6,7 +6,6 @@ y este proyecto adhiere a [Semantic Versioning](http://semver.org/spec/v2.0.0.ht
 
 ## [1.1.0] - 2018-10-17
 ### Changed
-- Método finishPayment eliminado
 - Ya no hay diferenciación de ambientes
 
 ## [1.0.0] - 2018-09-13
