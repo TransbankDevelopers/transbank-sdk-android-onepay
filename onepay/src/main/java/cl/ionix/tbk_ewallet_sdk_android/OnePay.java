@@ -21,8 +21,8 @@ import cl.ionix.tbk_ewallet_sdk_android.callback.OnePayCallback;
 public class OnePay {
 
     private Context context;
-    private static final String INTENT_ACTION = "cl.ionix.ewallet.APP_2_APP_ACTION";
-    private static final String MARKET_URI = "market://details?id=cl.ionix.ewallet";
+    private static final String INTENT_ACTION = "cl.transbank.onepay.APP_2_APP_ACTION";
+    private static final String MARKET_URI = "market://details?id=cl.transbank.onepay";
     private static final String ONE_PAY_SCHEME = "onepay:";
 
     public OnePay(Context context) {
